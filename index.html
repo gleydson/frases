@@ -1,4 +1,10 @@
-<style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
   body {
     background-color: oklch(0.98 0.01 85);
     font-family: 'Verdana', sans-serif;
@@ -55,35 +61,37 @@
 </style>
 
 <script>
-  const frases = [
-    "A vida é o que acontece enquanto você está ocupado fazendo outros planos.",
-    "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo.",
-    "A única maneira de fazer um excelente trabalho é amar o que você faz.",
-    "Seja você mesmo; todos os outros já foram tomados.",
-    "A imaginação é mais importante que o conhecimento.",
-    "O futuro pertence àqueles que acreditam na beleza de seus sonhos.",
-    "A felicidade não é algo pronto. Ela vem de suas próprias ações.",
-    "Você nunca é velho demais para definir outro objetivo ou sonhar um novo sonho.",
-    "A vida é 10% do que acontece com você e 90% de como você reage a isso.",
-    "O único impossível é aquilo que você não tenta.",
-    "Grandes coisas nunca vêm de zonas de conforto.",
-    "Acredite que você pode e você já está no meio do caminho.",
-    "A persistência é o caminho do êxito.",
-    "Não espere por oportunidades, crie-as.",
-    "O melhor momento para plantar uma árvore foi há 20 anos. O segundo melhor momento é agora.",
-    "Seja a mudança que você quer ver no mundo.",
-    "A coragem não é a ausência do medo, mas a ação apesar dele.",
-    "Cada dia é uma nova oportunidade para mudar sua vida.",
-    "O conhecimento é poder, mas o conhecimento aplicado é superpoder.",
-    "Sonhe grande e ouse falhar.",
-  ]
+    const frases = [
+      "A vida é o que acontece enquanto você está ocupado fazendo outros planos.",
+      "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo.",
+      "A única maneira de fazer um excelente trabalho é amar o que você faz.",
+      "Seja você mesmo; todos os outros já foram tomados.",
+      "A imaginação é mais importante que o conhecimento.",
+      "O futuro pertence àqueles que acreditam na beleza de seus sonhos.",
+      "A felicidade não é algo pronto. Ela vem de suas próprias ações.",
+      "Você nunca é velho demais para definir outro objetivo ou sonhar um novo sonho.",
+      "A vida é 10% do que acontece com você e 90% de como você reage a isso.",
+      "O único impossível é aquilo que você não tenta.",
+      "Grandes coisas nunca vêm de zonas de conforto.",
+      "Acredite que você pode e você já está no meio do caminho.",
+      "A persistência é o caminho do êxito.",
+      "Não espere por oportunidades, crie-as.",
+      "O melhor momento para plantar uma árvore foi há 20 anos. O segundo melhor momento é agora.",
+      "Seja a mudança que você quer ver no mundo.",
+      "A coragem não é a ausência do medo, mas a ação apesar dele.",
+      "Cada dia é uma nova oportunidade para mudar sua vida.",
+      "O conhecimento é poder, mas o conhecimento aplicado é superpoder.",
+      "Sonhe grande e ouse falhar.",
+    ]
 
-  function gerarFrase() {
-    const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
-    document.querySelector("blockquote").innerText = fraseAleatoria;
-  }
-</script>
+    function gerarFrase() {
+      const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
+      document.querySelector("blockquote").innerText = fraseAleatoria;
+    }
+  </script>
 
+  <title>Frases</title>
+</head>
 <body>
   <h1>Inspiração diária</h1>
   
@@ -99,3 +107,6 @@
     Gerar nova frase
   </button>
 </body>
+</html>
+
+
