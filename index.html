@@ -1,112 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-  body {
-    background-color: oklch(0.98 0.01 85);
-    font-family: 'Verdana', sans-serif;
-    display: flex;
-    padding: 20px;
-    margin: 0;
-    height: 100%;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-  }
+    <style>
+      body {
+        background-color: #FFF3D7;
+        font-family: 'Comic Sans MS', sans-serif;
+        display: flex;
+        padding: 20px;
+        margin: 0;
+        height: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+      }
 
-  h1 {
-    color: black;
-  }
+      h1 {
+        font-size: 36px;
+        color: black;
+      }
 
-  p {
-    color: #333;
-    font-size: 18px;
-  }
+      p {
+        color: #333;
+        font-size: 18px;
+      }
 
-  img {
-    border-radius: 8px;
-  }
+      img {
+        border-radius: 8px;
+        width: 260px;
+        height: 200px;
+      }
 
-  div {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    margin: 20px auto;
-    width: 70%;
-  }
+      div {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        margin: 20px auto;
+        width: 70%;
+        height: 80px;
+      }
 
-  blockquote {
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-    color: #555;
-    margin: 20px auto;
-    width: 60%;
-    padding-left: 10px;
-  }
+      blockquote {
+        font-style: italic;
+        font-size: 20px;
+        text-align: center;
+        color: #555;
+        margin: 20px auto;
+        width: 60%;
+      }
 
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-</style>
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 32px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 6px 0 #388E3C;
+      }
 
-<script>
-    const frases = [
-      "A vida é o que acontece enquanto você está ocupado fazendo outros planos.",
-      "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo.",
-      "A única maneira de fazer um excelente trabalho é amar o que você faz.",
-      "Seja você mesmo; todos os outros já foram tomados.",
-      "A imaginação é mais importante que o conhecimento.",
-      "O futuro pertence àqueles que acreditam na beleza de seus sonhos.",
-      "A felicidade não é algo pronto. Ela vem de suas próprias ações.",
-      "Você nunca é velho demais para definir outro objetivo ou sonhar um novo sonho.",
-      "A vida é 10% do que acontece com você e 90% de como você reage a isso.",
-      "O único impossível é aquilo que você não tenta.",
-      "Grandes coisas nunca vêm de zonas de conforto.",
-      "Acredite que você pode e você já está no meio do caminho.",
-      "A persistência é o caminho do êxito.",
-      "Não espere por oportunidades, crie-as.",
-      "O melhor momento para plantar uma árvore foi há 20 anos. O segundo melhor momento é agora.",
-      "Seja a mudança que você quer ver no mundo.",
-      "A coragem não é a ausência do medo, mas a ação apesar dele.",
-      "Cada dia é uma nova oportunidade para mudar sua vida.",
-      "O conhecimento é poder, mas o conhecimento aplicado é superpoder.",
-      "Sonhe grande e ouse falhar.",
-    ]
+      button:active {
+        box-shadow: none;
+        transform: translateY(6px);
+      }
 
-    function gerarFrase() {
-      const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
-      document.querySelector("blockquote").innerText = fraseAleatoria;
-    }
-  </script>
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
 
-  <title>Frases</title>
-</head>
-<body>
-  <h1>Inspiração diária</h1>
-  
-  <p>Descubra frases que podem transformar seu dia</p>
-  
-  <img src="montanha.jpg" width="260px" height="200px" />
-  
-  <div>
-    <blockquote></blockquote>
-  </div>
-  
-  <button onclick="gerarFrase()">
-    Gerar nova frase
-  </button>
-</body>
+    <script>
+        const frases = [
+          "A vida é o que acontece enquanto você está ocupado fazendo outros planos.",
+          "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo.",
+          "A única maneira de fazer um excelente trabalho é amar o que você faz.",
+          "Seja você mesmo; todos os outros já foram tomados.",
+          "A imaginação é mais importante que o conhecimento.",
+          "O futuro pertence àqueles que acreditam na beleza de seus sonhos.",
+          "A felicidade não é algo pronto. Ela vem de suas próprias ações.",
+          "Você nunca é velho demais para definir outro objetivo ou sonhar um novo sonho.",
+          "A vida é 10% do que acontece com você e 90% de como você reage a isso.",
+          "O único impossível é aquilo que você não tenta.",
+          "Grandes coisas nunca vêm de zonas de conforto.",
+          "Acredite que você pode e você já está no meio do caminho.",
+          "A persistência é o caminho do êxito.",
+          "Não espere por oportunidades, crie-as.",
+          "O melhor momento para plantar uma árvore foi há 20 anos. O segundo melhor momento é agora.",
+          "Seja a mudança que você quer ver no mundo.",
+          "A coragem não é a ausência do medo, mas a ação apesar dele.",
+          "Cada dia é uma nova oportunidade para mudar sua vida.",
+          "O conhecimento é poder, mas o conhecimento aplicado é superpoder.",
+          "Sonhe grande e ouse falhar.",
+        ]
+
+        function gerarFrase() {
+          const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
+          document.querySelector("blockquote").innerText = fraseAleatoria;
+        }
+
+        window.onload = gerarFrase;
+      </script>
+
+    <title>Frases</title>
+  </head>
+  <body>
+    <h1>Inspiração diária</h1>
+    
+    <p>Descubra frases que podem transformar seu dia</p>
+    
+    <img src="montanha.jpg" />
+    
+    <div>
+      <blockquote></blockquote>
+    </div>
+    
+    <button onclick="gerarFrase()">
+      Gerar nova frase
+    </button>
+  </body>
 </html>
 
 
